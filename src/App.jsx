@@ -11,10 +11,17 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <main className="flex">
-      <Sidebar />
-      <div className="flex flex-col flex-1 relative">
-        <AdminNav />
+    <main>
+      <div className="">
+        <div className="relative h-screen">
+          <div className=" z-10">
+            <Hero />
+          </div>
+
+          <div className=" bg-gray-500 absolute z-20 top-0 mx-0  flex justify-center z-1 w-full">
+            <Navbar />
+          </div>
+        </div>
       </div>
     </main>
   );
